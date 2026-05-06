@@ -329,15 +329,16 @@ button { cursor: pointer; font-family: var(--font-body); }
   flex-direction: column;
   gap: 0;
   background: var(--dark-1);
-  border-top: 1px solid var(--gray-600);
+  border-top: 1px solid transparent;
   padding: 16px 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.4s ease, border-color 0.4s ease;
 }
 
 .nav-mobile.open {
   max-height: 400px;
+  border-top-color: var(--gray-600);
 }
 
 .nav-mobile a {
@@ -365,6 +366,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 80px;

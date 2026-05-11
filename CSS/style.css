@@ -515,48 +515,37 @@ button { cursor: pointer; font-family: var(--font-body); }
 /* ============================================================
    TICKER STRIP
    ============================================================ */
-.ticker-strip {
+.feature-strip {
   background: var(--dark-2);
-  padding: 28px 0;
-  overflow: hidden;
+  padding: 20px 0;
   border-top: 1px solid var(--dark-4);
   border-bottom: 1px solid var(--dark-4);
 }
 
-.ticker-track {
+.feature-strip-inner {
   display: flex;
   align-items: center;
-  width: max-content;
-  animation: ticker-scroll 32s linear infinite;
-  gap: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 0;
 }
 
-.ticker-strip:hover .ticker-track {
-  animation-play-state: paused;
+.feature-strip-item {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-400);
 }
-
-@keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-.ticker-img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(0.7) grayscale(0.3);
-  transition: filter 0.3s;
-}
-
-.ticker-img:hover { filter: brightness(1) grayscale(0); }
 
 .trust-dot {
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   background: var(--blue);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  margin: 0 40px;
+  margin: 0 28px;
   flex-shrink: 0;
 }
 

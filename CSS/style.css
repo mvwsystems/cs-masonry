@@ -328,17 +328,19 @@ button { cursor: pointer; font-family: var(--font-body); }
   display: none;
   flex-direction: column;
   gap: 0;
-  background: var(--dark-1);
+  background: transparent;
   border-top: 1px solid transparent;
-  padding: 16px 0;
+  padding: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, border-color 0.4s ease;
+  transition: max-height 0.4s ease, border-color 0.4s ease, background 0.4s ease;
 }
 
 .nav-mobile.open {
   max-height: 400px;
+  background: var(--dark-1);
   border-top-color: var(--gray-600);
+  padding: 16px 0;
 }
 
 .nav-mobile a {

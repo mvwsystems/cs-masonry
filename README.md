@@ -1,6 +1,6 @@
 # C & S Brick, Stucco, and Stone — Website
 
-Static marketing website for C & S Brick, Stucco, and Stone — a commercial masonry subcontractor based in Rockwall, TX, and sister company to C&C Roofing. Built by [Titan AI](https://titanai.io).
+Static marketing website for C & S Brick, Stucco, and Stone — a commercial masonry subcontractor based in Rockwall, TX, and sister company to C&C Roofing. Powered by [6 SIGNAL](https://6signal.co/).
 
 ---
 
@@ -178,7 +178,7 @@ Targets modern browsers (Chrome, Firefox, Safari, Edge). Uses:
 
 ## Credits
 
-- Built by [Titan AI](https://titanai.io)
+- Powered by [6 SIGNAL](https://6signal.co/)
 - Fonts: Google Fonts — Bebas Neue, Barlow, Barlow Condensed
 - Icons: Inline SVG (no external dependencies)
 - Forms: Netlify Forms (built-in)
